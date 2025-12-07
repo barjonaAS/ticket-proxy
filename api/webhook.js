@@ -9,7 +9,7 @@ export default async function handler(req, res) {
 
     // Reenviar la solicitud a tu endpoint de n8n/ngrok
     const response = await fetch(
-      "https://454fe5557c44.ngrok-free.app/webhook-test/2f375735-440f-425d-ba8c-f330b1d5c45e",
+      "https://454fe5557c44.ngrok-free.app:5678/webhook/2f375735-440f-425d-ba8c-f330b1d5c45e",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
